@@ -21,7 +21,7 @@ class _HomeState extends State<Home>  {
       child: Scaffold(
         appBar: AppBar(
          
-          bottom: TabBar(
+          bottom:const TabBar(
             tabs:  <Widget>[
               Tab(
                text: 'For you'
@@ -43,7 +43,7 @@ class _HomeState extends State<Home>  {
         onPressed: () {
           Navigator.of(context).pushNamed('/CreateFeedPage/tweet');
         },
-        child: Icon(
+        child: const  Icon(
           Icons.add,
         color:Colors.white
        )),
